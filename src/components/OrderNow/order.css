@@ -87,6 +87,9 @@
     background-color: transparent;
     color: var(--color-orange);
 }
+.transition-mobile{
+    display: none;
+}
 
 /* --- Medium Screens --- */
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -186,6 +189,15 @@
     }
     .order .want{
         display: flex;
+        z-index: 99;
+    }
+    .transition-mobile{
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 1270px;
+        z-index: 98;
+        background: linear-gradient(to top, #000 50%, rgba(0, 0, 0, 0) 90%);
     }
     
 }

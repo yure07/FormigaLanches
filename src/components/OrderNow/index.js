@@ -8,6 +8,7 @@ export default function OrderNow (){
                 <p>corra atrás da</p>
                 <p>felicidade!</p>
                 <p>peça agora mesmo</p>
+                <div className='transition-mobile'></div>
                 <button className='want'>vou querer!</button>
             </div>
 

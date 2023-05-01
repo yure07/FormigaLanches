@@ -1,4 +1,8 @@
+body{
+    overflow: hidden;
+}
 .container-house2{
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     background-color: #000;
@@ -6,6 +10,8 @@
 
 .container-house2 .content2{
     display: flex;
+    z-index: 999;
+    margin-left: 40px;
 }
 
 .transition3{
@@ -22,10 +28,10 @@
 .transition5{
     background: linear-gradient(to right, #000 50%, rgba(0, 0, 0, 0));
     height: 85vh;
-    width: 20vw;
+    width: 10vw;
     position: absolute;
-    left: 45%;
-    z-index: 98;
+    left: 50%;
+    z-index: 1;
 }
 
 .container-house2 p{
@@ -34,9 +40,7 @@
     font-family: 'MADE Outer Sans';
     font-weight: 300;
     font-size: 25px;
-    padding: 0 2%;
     margin-top: 8%;
-    z-index: 99;
 }
 
 .img-house2{
