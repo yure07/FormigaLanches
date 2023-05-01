@@ -1,0 +1,103 @@
+.container-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'MADE Outer Sans';
+    font-weight: 300;
+}
+
+.container-header > ul{
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.container-header > ul > li{
+    margin: 0 1em;
+    color: var(--color-beige2);
+    height: 35px;
+    cursor: pointer;
+}
+
+.container-header > ul > li:hover{
+    border-bottom: 1px solid var(--color-beige2);
+}
+
+.img-logo{
+    background: url(../../assets/logocomp.svg);
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 140px;
+    transition: 1s;
+}
+
+.img-logo:hover{
+    transform: rotateY(180deg);
+}
+
+.container-header .menu-mobile{
+    text-transform: uppercase;
+    display: none;
+}
+
+.container-header .menu-mobile h1:first-child{
+    color: var(--color-beige2);
+}
+
+.container-header .menu-mobile h1:last-child{
+    margin-top: -30px;
+    color: var(--color-orange);
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-header > ul{
+        font-size: 18px;
+    }
+
+    .img-logo{
+        width: 90px;
+        height: 100px;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-header > ul > li{
+        display: none;
+    }
+
+    .img-logo{
+        width: 90px;
+        height: 100px;
+        margin-top: -20px;
+    }
+
+    .container-header .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+    }
+}
+
+/* --- Mobile Screen --- */
+@media screen and (width <= 667px){
+    .container-header > ul {
+        display: none;
+    }
+
+    .container-header .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .container-header .menu-mobile h1:last-child{
+        margin-top: -20px;
+    }
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import OrderNow from "./components/OrderNow";
+import QueenFormiga from "./components/QueenFormiga";
+import Menu from "./components/Menu";
+import House from "./components/House";
+import House2 from "./components/House2";
+import Catalog from "./components/Catalog";
+import Vegan from "./components/Vegan";
+import Whisky from "./components/Whisky";
+import Acompanhante from "./components/Acompanhante";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <OrderNow/>
+    <QueenFormiga/>
+    <Menu/>
+    <House/>
+    <House2/>
+    <Catalog/>
+    <Vegan/>
+    <Whisky/>
+    <Acompanhante/>
+    <Contact/>
+    <Footer/>
+    </>
   );
 }
 

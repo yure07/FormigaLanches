@@ -1,0 +1,209 @@
+.container-main{
+    display: flex;
+    flex-direction: column;
+}
+.container-3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+.container-break{
+    display: flex;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 420px;
+}
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transition2{
+    width: 100vw;
+    height: 80px;
+    position: absolute;
+    top: 190%;
+    background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+}
+
+.img-geral{
+    width: 400px;
+    height: 300px;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.img-combo{
+    background: url(../../assets/flat-lay-burger-wooden-board-with-fries-beer.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-vegetarian{
+    background: url(../../assets/vegan-burgers-with-lentils-pistashios.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-parts{
+    background: url(../../assets//IMG_9829.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-drinks{
+    background: url(../../assets/jack-ward-yU9TNvk_jI8-unsplash.webp);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.img-followup{
+    background: url(../../assets/fried-nuggets-french-fries-wooden-board.webp);
+    background-position: center;
+    background-size: cover;
+    width: 815px;
+    height: 300px;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.filter{
+    backdrop-filter: blur(2px) brightness(40%);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.menu p{
+    color: var(--color-beige1);
+    font-size: 35px;
+    font-family: 'MADE Outer Sans';
+    padding: 0 5%;
+}
+
+.onion-img{
+    background: url(../../assets/Onion.webp);
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+    filter: blur(2px);
+    position: absolute;
+    right: -10%;
+    top: 260%;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .transition2{
+        display: none;
+    }
+    .menu p{
+        font-size: 25px;
+    }
+    .img-geral{
+        width: 300px;
+        height: 200px;
+    }
+    .img-followup{
+        width: 620px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+    .onion-img{
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        right: -10%;
+        top: 230%;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .transition22{
+        display: none;
+    }
+    .menu{
+        height: 450px;
+    }
+    .menu p{
+        font-size: 20px;
+    }
+    .img-geral{
+        width: 200px;
+        height: 150px;
+    }
+    .img-followup{
+        width: 420px;
+        height: 150px;
+        margin-top: -150px;
+        margin-left: -200px;
+    }
+    .onion-img{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: -10%;
+        top: 120%;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .transition2{
+        display: none;
+    }
+    .menu {
+        height: 700px;
+    }
+    .menu p{
+        font-size: 16px;
+        padding: 0;
+    }
+    .img-geral{
+        width: 45vw;
+        height: 120px;
+        border-radius: 0;
+    }
+    .img-parts{
+        margin-top: 10px;
+    }
+    .img-drinks{
+        margin-top: 10px
+    }
+    .img-followup{
+        width: 90vw;
+        height: 170px;
+        border-radius: 1em;
+    }
+    .filter{
+        justify-content: center;
+    }
+    .container-3{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container-break{
+        position: absolute;
+        margin-top: 260px;
+        margin-left: 00px;
+    }
+    .onion-img{
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        right: -20%;
+        top: 0;
+        margin-top: 1250px;
+        z-index: 99;
+    }
+}

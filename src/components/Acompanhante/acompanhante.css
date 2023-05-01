@@ -1,0 +1,171 @@
+.container-acomp{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-acomp .info-acomp{
+    text-align: center;
+}
+
+.info-acomp p{
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+}
+
+.info-acomp p:nth-child(1){
+    color: var(--color-beige2);
+    font-size: 60px;
+}
+
+.info-acomp p:nth-child(2){
+    color: var(--color-orange);
+    font-size: 95px;
+    margin-top: -25px;
+}
+
+.img3{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.chickens{
+    background-image: url('../../assets/balde-frango.png');
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 450px;
+}
+
+.potatos{
+    background-image: url('../../assets/batata.png');
+    background-position: center;
+    background-size: cover;
+    width: 220px;
+    height: 330px;
+    margin-top: 110px;
+    margin-left: -140px;
+}
+
+.chicken{
+    filter: blur(3px);
+    width: 35%;
+    position: absolute;
+    margin-top: -30%;
+    left: -10%;
+}
+
+.potato{
+    filter: blur(3px);
+    width: 45%;
+    position: absolute;
+    margin-top: -25%;
+    right: -15%;
+    transform: rotateY(180deg);
+    rotate: 35deg;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-acomp{
+        height: 90vh;
+    }
+    .info-acomp p:nth-child(1){
+        font-size: 50px;
+    }
+    
+    .info-acomp p:nth-child(2){
+        font-size: 75px;
+    }
+    .chicken{
+        width: 30%;
+    }
+    .chickens{
+        width: 360px;
+        height: 400px;
+    }
+    .potatos{
+        width: 200px;
+        height: 290px;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-acomp{
+        height: 55vh;
+    }
+    
+    .info-acomp p:nth-child(1){
+        font-size: 35px;
+    }
+    .info-acomp p:nth-child(2){
+        font-size: 55px;
+    }
+    .chicken{
+        width: 30%;
+        margin-top: -35%;
+        left: -8%;
+    }
+    .potato{
+        margin-top: -30%;
+    }
+    .chickens{
+        width: 310px;
+        height: 350px;
+    }
+    .potatos{
+        width: 150px;
+        height: 220px;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-acomp{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 45vh;
+    }
+    .info-acomp p:nth-child(1){
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .info-acomp p:nth-child(2){
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .chickens{
+        width: 250px;
+        height: 280px;
+        
+    }
+    .potatos{
+        width: 100px;
+        height: 150px;
+        margin-top: 120px;
+        margin-left: -110px;
+    }
+    .chicken{
+        display: none;
+    }
+    .potato{
+        display: none;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width <= 395px){
+    .container-acomp{
+        height: 55vh;
+    }
+    .potatos{
+        width: 30vw;
+        height: 21vh;
+        margin-top: 110px;
+        margin-left: -110px;
+    }
+}

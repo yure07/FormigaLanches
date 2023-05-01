@@ -1,0 +1,130 @@
+.container-catalog{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    text-align: center;
+    font-family: 'MADE Outer Sans';
+}
+
+.container-catalog .transition1{
+    width: 100vw;
+    height: 80px;
+    margin-top: -25px;
+    background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+}
+
+.container-catalog h1{
+    margin: 0;
+}
+
+.container-catalog h1:nth-child(2){
+    color: var(--color-beige2);
+    font-weight: 300;
+    font-size: 57px;
+}
+
+.container-catalog h1:nth-child(3){
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 88px;
+    margin-top: -20px;
+}
+
+.container-catalog .container-slide{
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.card{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+}
+
+
+input:checked+.card{
+    background: url(../../assets/BARRA.svg);
+    background-repeat: no-repeat;
+}
+
+input:checked+.card > .text > p{
+    color: #000;
+}
+.custom-radio input{
+    display: none;
+}
+
+.text p{
+    margin: 0;
+    color: var(--color-beige2);
+    text-transform: uppercase;
+}
+
+.card button{
+    background-color: var(--color-orange);
+    border-radius: 5px;
+    border: none;
+    font-family: 'MADE Outer Sans';
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 6px;
+}
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-catalog{
+        height: 80vh;
+    }
+}
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-catalog{
+        height: 90vh;
+    }
+    .container-catalog h1:nth-child(2){
+        font-size: 47px;
+    }
+    
+    .container-catalog h1:nth-child(3){
+        font-size: 72px;
+    }
+    .container-catalog .container-slide{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-catalog .transition1{
+        width: 100vw;
+        height: 50px;
+        margin-top: -50px;
+        position: absolute;
+        background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+    }
+    .container-catalog h1:nth-child(2){
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .container-catalog h1:nth-child(3){
+        font-size: 49px;
+    }
+    .container-catalog .container-slide{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 0;
+        justify-content: space-evenly;
+    }
+    .card{
+        padding: 0px;
+        width: 40vw;
+    }
+}

@@ -1,0 +1,188 @@
+.transition{
+    width: 100vw;
+    height: 120px;
+    position: absolute;
+    bottom: -10%;
+    background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+}
+
+.text-queen{
+    position: absolute;
+    text-transform: uppercase;
+    width: 70vw;
+    height: 100%;
+    background: linear-gradient(to right, #000 70%, rgba(0, 0, 0, 0));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'MADE Outer Sans';
+}
+
+.text-queen p{
+    width: 55vw;
+    padding: 0 3%;
+}
+
+.text-queen p:nth-child(1){
+    color: var(--color-beige2);
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-queen p:nth-child(2){
+    color: var(--color-orange);
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-queen p:nth-child(3){
+    font-weight: 300;
+    color: var(--color-beige1);
+    font-size: 19px;
+    width: 70%;
+}
+
+.img-hamburguer{
+    background: url(../../assets/LANCHE\ 2.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-tomate{
+    background: url(../../assets/cat.webp);
+    width: 250px;
+    height: 260px;
+    bottom: -115%;
+    left: -3%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    filter: blur(2px);
+    z-index: 99;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .text-queen{
+        height: 500px;
+    }
+
+    .text-queen p:nth-child(1){
+        font-size: 50px;
+    }
+    
+    .text-queen p:nth-child(2){
+        font-size: 50px;
+    }
+    
+    .text-queen p:nth-child(3){
+        font-size: 16px;
+    }
+
+    .img-hamburguer{
+        width: 100vw;
+        height: 500px;
+    }
+
+    .img-tomate{
+        width: 160px;
+        height: 170px;
+        bottom: -70%;
+        left: -5%;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .transition{
+        height: 50px;
+        bottom: 0%;
+        top: 45%;
+    }
+    .text-queen{
+        height: 400px;
+    }
+
+    .text-queen p:nth-child(1){
+        font-size: 40px;
+    }
+    
+    .text-queen p:nth-child(2){
+        font-size: 40px;
+    }
+    
+    .text-queen p:nth-child(3){
+        font-size: 14px;
+    }
+
+    .img-hamburguer{
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-tomate{
+        width: 150px;
+        height: 150px;
+        bottom: 50px;
+        left: -8%;
+    }
+}
+
+/* --- Mobile Screen --- */
+@media screen and (width <= 667px){
+    .transition{
+        width: 100vw;
+        height: 90px;
+        top: 0;
+        margin-top: 330px;
+        z-index: 98;
+        background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+    }
+    .text-queen{
+        width: 100vw;
+        margin-top: 250px;
+        z-index: 99;
+        height: 20%;
+        background: #000;
+        align-items: center;
+        box-shadow: 20px 0 0 20px #00000039;
+    }
+    
+    .text-queen p{
+        width: 100vw;
+        text-align: center;
+    }
+    
+    .text-queen p:nth-child(1){
+        font-size: 40px;
+        margin-top: -60px;
+    }
+    
+    .text-queen p:nth-child(2){
+        font-size: 40px;
+        margin-top: -10px;
+    }
+    
+    .text-queen p:nth-child(3){
+        font-size: 12px;
+        width: 300px;
+    }
+    
+    .img-hamburguer{
+        background-image: url(../../assets//LANCHE\ 2-mobile.webp);
+        height: 250px;
+    }
+    .img-tomate{
+        width: 130px;
+        height: 130px;
+        bottom: 0;
+        left: 85%;
+        top: 0;
+        margin-top: 360px;
+    }
+}

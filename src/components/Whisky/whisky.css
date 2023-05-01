@@ -1,0 +1,168 @@
+section{font-family: 'MADE Outer Sans';}
+.container-whisky {
+    background-color: black;
+    width: 100vw;
+    font-family: 'MADE Outer Sans';
+}
+
+.container-whisky .info-whisky{
+    text-align: center;
+}
+
+.info-whisky p{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.info-whisky p:nth-child(1){
+    color: var(--color-beige2);
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.info-whisky p:nth-child(2){
+    color: var(--color-orange);
+    font-size: 95px;
+    font-weight: 700;
+    margin-top: -25px;
+}
+
+.info-whisky p:nth-child(3){
+    color: var(--color-beige2);
+    font-size: 25px;
+}
+
+.whiskys{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100vh;
+}
+
+.whiskys .jack{
+    background-image: url('../../assets/jack-apple.png');
+    width: 600px;
+    margin-right: -180px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.whiskys .chivas{
+    background-image: url('../../assets/chivas.png');
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    position: absolute;
+    margin-top: -63%;
+    width: 65%;
+    filter: blur(2px);
+}
+
+.buchanan{
+    left: -30%;
+    rotate: -10deg;
+}
+
+.double-black{
+    right: -20%;
+    rotate: 10deg;
+}
+
+.transition-whisky{
+    background: linear-gradient(to top, #000 40%, rgba(0, 0, 0, 0));
+    height: 100px;
+    margin-top: -80px;
+    position: relative;
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-whisky {
+        width: 100vw;
+        height: 70vh;
+    }
+    .info-whisky p:nth-child(1){
+        font-size: 45px;
+    }
+    .info-whisky p:nth-child(2){
+        font-size: 75px;
+    }
+    .info-whisky p:nth-child(3){
+        font-size: 20px;
+    }
+    .whiskys .jack{
+        width: 400px;
+        margin-right: -130px;
+        height: 400px;
+    }
+    .whiskys .chivas{
+        width: 400px;
+        height: 400px;
+    }
+    .img2{
+        margin-top: -150%;
+        width: 70%;
+    }
+    .double-black{
+        right: -30%;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-whisky{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 33vh;
+    }
+    .whiskys{
+        height: 35vh;
+    }
+    .info-whisky p:nth-child(1){
+        font-size: 20px;
+    }
+    .info-whisky p:nth-child(2){
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .info-whisky p:nth-child(3){
+        font-size: 15px;
+        padding: 0 15%;
+        margin-top: 15px;
+    }
+    .whiskys .jack{
+        width: 40vw;
+        margin-right: -10px;
+        height: 25vh;
+    }
+    .whiskys .chivas{
+        width: 40vw;
+        height: 25vh;
+    }
+    .img2{
+        margin-top: -150%;
+        width: 70%;
+    }
+    .buchanan{
+        left: -38%;
+        rotate: -10deg;
+    }
+    .double-black{
+        right: -38%;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width <= 380px){
+    .container-whisky{
+        height: 35vh;
+    }
+    .info-whisky p:nth-child(3){
+        font-size: 14px;
+    }
+}

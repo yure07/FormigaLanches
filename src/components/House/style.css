@@ -1,0 +1,195 @@
+.container-house{
+    width: 100vw;
+    background-color: #000;
+}
+
+.container-house .content{
+    display: flex;
+}
+
+.container-house .img-house{
+    background: url(../../assets/FOTO\ 1.webp);
+    background-position: center;
+    background-size: cover;
+    width: 85vw;
+    height: 85vh;
+}
+
+.transition3{
+    width: 100vw;
+    height: 80px;
+    margin-top: -25px;
+    background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+}
+
+.transition4{
+    background: linear-gradient(to left, #000 50%, rgba(0, 0, 0, 0));
+    height: 85vh;
+    width: 10vw;
+    position: absolute;
+    left: 50%;
+}
+
+.content .text-content{
+    position: absolute;
+    right: 5%;
+    font-family: 'MADE Outer Sans';
+}
+
+.content .text-content p:nth-child(1){
+    color: var(--color-beige2);
+    font-size: 73px;
+    margin: -30px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content .text-content p:nth-child(2){
+    margin: 0;
+    text-align: center;
+    color: var(--color-orange);
+    font-size: 93px;
+    font-weight: 700;
+}
+
+.content .text-content p:nth-child(3){
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-beige2);
+    width: 40vw;
+}
+
+.img-lettuce{
+    background: url(../../assets/lettuce.webp);
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    transform: rotate(-17deg);
+    position: absolute;
+    left: -8%;
+    top: 360%;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-house{
+        margin-top: -100px;
+    }
+    .transition4{
+        left: 40%;
+    }
+    .container-house .img-house{
+        width: 55vw;
+        height: 55vh;
+    }
+    .content .text-content p:nth-child(1){
+        font-size: 53px;
+    }
+    .content .text-content p:nth-child(2){
+        font-size: 73px;
+    }
+    .content .text-content p:nth-child(3){
+        font-size: 18px;
+    }
+    .img-lettuce{
+        width: 300px;
+        height: 300px;
+        left: -8%;
+        top: 290%;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-house{
+        margin-top: -100px;
+    }
+    .transition4{
+        left: 40%;
+    }
+    .container-house .img-house{
+        width: 45vw;
+        height: 45vh;
+    }
+    .content .text-content{
+        right: 2%;
+    }
+    .content .text-content p:nth-child(1){
+        font-size: 43px;
+    }
+    .content .text-content p:nth-child(2){
+        font-size: 63px;
+    }
+    .content .text-content p:nth-child(3){
+        font-size: 18px;
+        width: 50vw;
+    }
+    .img-lettuce{
+        width: 230px;
+        height: 230px;
+        left: -8%;
+        top: 160%;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-house{
+       height: 780px;
+    }
+    .transition3{
+        display: none;
+    }
+    .transition4{
+        display: none;
+    }
+    .container-house .img-house{
+        background: url(../../assets/FOTO\ 1-mobile.webp);
+        width: 100vw;
+        height: 45vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .content .text-content{    
+        width: 100%;
+        align-items: center;
+        right: 0;
+        margin-top: 350px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to top, #000 90%, rgba(0, 0, 0, 0.236));
+    }
+    
+    .content .text-content p:nth-child(1){
+        font-size: 43px;
+        font-weight: 500;
+        margin:0;
+    }
+    .content .text-content p:nth-child(2){
+        font-size: 63px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+    .content .text-content p:nth-child(3){
+        font-size: 16px;
+        width: 90vw;
+    }
+    .img-lettuce{
+        width: 200px;
+        height: 200px;
+        left: -30%;
+        top: 30%;
+        margin-top: 2350px;
+        z-index: 99;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width <= 380px){
+    .content .text-content p:nth-child(3){
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,159 @@
+.container-footer{
+    width: 100vw;
+    height: 250px;
+    background-color: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.container-footer .be-franchisee{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 280px;
+}
+
+.be-franchisee p{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.be-franchisee button{
+    border: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'MADE Outer Sans';
+    font-size: 30px;
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+.container-footer .logo-img{
+    background-image: url(../../assets//logocomp.svg);
+    width: 150px;
+    height: 150px;
+}
+
+.menus{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.menus p{
+    font-weight: 400;
+    margin: 0px;
+}
+
+.menus ul{
+    list-style: none;
+    font-weight: 300;
+    padding: 0;
+    line-height: 30px;
+}
+
+.copy{
+    display: flex;
+    background-color: #ff7b00cf;
+    color: #fff;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy p{
+    display: inline;
+    margin: 0;
+    font-weight: 10;
+    letter-spacing: 1px;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-footer .be-franchisee{
+        width: 220px;
+    }
+    .be-franchisee p{
+        font-size: 24px;
+    }
+    .be-franchisee button{
+        font-size: 25px;
+    }
+    .container-footer .logo-img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-footer{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container-footer .be-franchisee{
+        width: 220px;
+    }
+    .be-franchisee p{
+        font-size: 24px;
+    }
+    .be-franchisee button{
+        font-size: 25px;
+    }
+    .container-footer .logo-img{
+        width: 120px;
+        height: 120px;
+    }
+    .copy p{
+        font-size: 15px;
+        margin: 0;
+        font-weight: 10;
+        letter-spacing: 1px;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-footer{
+        height: 75vh;
+        flex-direction: column;
+    }
+    .container-footer .be-franchisee{
+        width: 220px;
+    }
+    .be-franchisee p{
+        font-size: 23px;
+    }
+    .be-franchisee button{
+        font-size: 20px;
+    }
+    .container-footer .logo-img{
+        display: none;
+    }
+    .menus{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .menus ul{
+        padding: 0 65px;
+    }
+    .copy{
+        height: 70px;
+        text-align: center;
+    }
+    
+    .copy p{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+}

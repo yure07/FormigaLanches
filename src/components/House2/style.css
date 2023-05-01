@@ -1,0 +1,200 @@
+.container-house2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container-house2 .content2{
+    display: flex;
+}
+
+.transition3{
+    width: 100vw;
+    height: 100px;
+    margin-top: -30px;
+    background: linear-gradient(to top, #000 70%, rgba(0, 0, 0, 0));
+}
+
+.text-content2{
+    z-index: 99;
+}
+
+.transition5{
+    background: linear-gradient(to right, #000 50%, rgba(0, 0, 0, 0));
+    height: 85vh;
+    width: 20vw;
+    position: absolute;
+    left: 45%;
+    z-index: 98;
+}
+
+.container-house2 p{
+    color: var(--color-beige2);
+    width: 55vw;
+    font-family: 'MADE Outer Sans';
+    font-weight: 300;
+    font-size: 25px;
+    padding: 0 2%;
+    margin-top: 8%;
+    z-index: 99;
+}
+
+.img-house2{
+    background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
+    width: 45vw;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+
+.img-tomatoe{
+    background: url(../../assets/Tomatoe.webp);
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    filter: blur(2px);
+    right: -8%;
+    top: 460%;
+}
+
+.up-page{
+    background: url(../../assets/seta.svg);
+    width: 50px;
+    border: 0;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+}
+
+/* --- Medium Screens --- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-house2{
+        height: 80vh;
+    }
+    .transition5{
+        height: 55vh;
+    }
+    .text-content2 p{
+        width: 50vw;
+        font-size: 18px;
+        padding: 0 2%;
+        margin-top: 8%;
+        z-index: 99;
+    }
+    .img-house2{
+        background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
+        width: 50vw;
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+    }
+    .img-tomatoe{
+        width: 250px;
+        height: 250px;
+        right: -13%;
+        top: 390%;
+    }
+}
+
+/* --- Large Screens --- */
+@media screen and (min-width: 668px) and (max-width: 1023px){
+    .container-house2{
+        height: 70vh;
+    }
+    .transition5{
+        background: linear-gradient(to right, #000 50%, rgba(0, 0, 0, 0));
+        height: 60vh;
+        width: 20vw;
+        position: absolute;
+        left: 45%;
+        z-index: 98;
+    }
+    .container-house2 p{
+        width: 50vw;
+        font-size: 20px;
+        padding: 0 2%;
+        margin-top: 8%;
+        z-index: 99;
+    }
+    .img-house2{
+        background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
+        width: 50vw;
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+    }
+    .img-tomatoe{
+        width: 200px;
+        height: 200px;
+        right: -13%;
+        top: 225%;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width < 650px){
+    .container-house2{
+        position: relative;
+        margin-top: 00px;
+        height: 100%;
+    }
+    .transition5{
+        background: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
+        margin-top: 250px;
+        width: 100vw;
+        left: 0;
+        height: 50px;
+    }
+    .content2{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2 p{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 0;
+        font-size: 16px;
+        
+    }
+    .img-house2{
+        background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
+        width: 100vw;
+        height: 45vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .img-tomatoe{
+        top: 220%;
+        width: 180px;
+        height: 180px;
+        right: -25%;
+        z-index: 99;
+    }
+}
+
+/* --- Mobile Screens --- */
+@media screen and (width <= 380px){
+    .content2 p{
+        font-size: 15px;
+    }
+}
