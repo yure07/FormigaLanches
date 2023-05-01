@@ -14,7 +14,7 @@ export default function Contact () {
         if (divMain.style.backgroundColor === 'var(--color-beige2)'){
             svg.style.display = 'flex'
             divMain.style.backgroundColor = 'var(--color-orange)'
-            icon.style.marginLeft ='-290px'
+            
         } else {
             divMain.style.backgroundColor = 'var(--color-beige2)'
             icon.style.marginLeft = '-100px';
