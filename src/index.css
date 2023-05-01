@@ -3,10 +3,12 @@
   --color-beige1: #ffe6c0;
   --color-beige2: #fff4e4;
 }
+*, html, body{
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   background-color: #000;
 }

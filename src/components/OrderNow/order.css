@@ -81,6 +81,7 @@
     padding: 8px;
     border-radius: 5px;
     transition: all 0.2s;
+    color: #000;
 }
 .order button:hover{
     background-color: transparent;
