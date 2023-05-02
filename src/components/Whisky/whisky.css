@@ -116,13 +116,18 @@ section{font-family: 'MADE Outer Sans';}
 
 /* --- Mobile Screens --- */
 @media screen and (width < 650px){
+    .transition-whisky{
+        display: none;
+    }
     .container-whisky{
         display: flex;
         flex-direction: column-reverse;
         height: 50vh;
+        margin-top: -60px;
     }
     .whiskys{
-        height: 35vh;
+        height: 25vh;
+        display: flex;
     }
     .info-whisky p:nth-child(1){
         font-size: 20px;

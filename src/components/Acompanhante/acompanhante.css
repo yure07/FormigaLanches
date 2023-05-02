@@ -138,10 +138,12 @@
         font-size: 30px;
         margin-top: -5px;
     }
+    .img3{
+        overflow: hidden;
+    }
     .chickens{
         width: 250px;
         height: 280px;
-        
     }
     .potatos{
         width: 100px;

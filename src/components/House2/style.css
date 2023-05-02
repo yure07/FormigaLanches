@@ -126,6 +126,9 @@ body{
         left: 45%;
         z-index: 98;
     }
+    .container-house2 .content2{
+        margin-left: 40px;
+    }
     .container-house2 p{
         width: 50vw;
         font-size: 20px;
@@ -153,12 +156,14 @@ body{
 @media screen and (width < 650px){
     .container-house2{
         position: relative;
-        margin-top: 00px;
         height: 100%;
+    }
+    .container-house2 .content2{
+        margin-left: -20px;
     }
     .transition5{
         background: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
-        margin-top: -45px;
+        margin-top: 305px;
         width: 100vw;
         left: 0;
         height: 70px;
@@ -166,18 +171,11 @@ body{
     .content2{
         display: flex;
         flex-direction: column;
-    }
-    .container-house2 .content2 {
-        display: flex;
-        width: 100vw;
-        margin-left: 0;
-        margin-top: 0;
-        justify-content: center;
         align-items: center;
     }
-    .content2 p{
-        width: 85%;
-        margin-left: 20px;
+    .content2 .text-content2 p{
+        width: 90vw;
+        margin-left: 0px;
         font-size: 16px;
         text-align: center;
     }
