@@ -102,6 +102,10 @@
 
 /* --- Medium Screens --- */
 @media screen and (min-width: 768px) and (max-width: 1024px){
+    .container-break{
+        margin-top: 220px;
+        margin-left: 320px;
+    }
     .transition2{
         display: none;
     }
@@ -115,8 +119,6 @@
     .img-followup{
         width: 620px;
         height: 200px;
-        margin-top: -100px;
-        margin-left: -100px;
     }
     .onion-img{
         width: 240px;
@@ -129,7 +131,11 @@
 
 /* --- Large Screens --- */
 @media screen and (min-width: 668px) and (max-width: 1023px){
-    .transition22{
+    .container-break{
+        margin-top: 170px;
+        margin-left: 220px;
+    }
+    .transition2{
         display: none;
     }
     .menu{
@@ -145,8 +151,6 @@
     .img-followup{
         width: 420px;
         height: 150px;
-        margin-top: -150px;
-        margin-left: -200px;
     }
     .onion-img{
         width: 150px;
@@ -159,6 +163,9 @@
 
 /* --- Mobile Screens --- */
 @media screen and (width < 650px){
+    .container-main{
+        margin-top: -100px;
+    }
     .transition2{
         display: none;
     }

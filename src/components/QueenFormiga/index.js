@@ -2,7 +2,7 @@ import './queen.css'
 
 export default function QueenFormiga (){
     return(
-        <section>
+        <section className='container-queen'>
             <div className='transition'></div>
 
             <div className='text-queen'>

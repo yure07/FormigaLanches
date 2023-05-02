@@ -88,6 +88,7 @@
     }
     .content .text-content p:nth-child(1){
         font-size: 53px;
+        margin-top: 0;
     }
     .content .text-content p:nth-child(2){
         font-size: 73px;
@@ -106,7 +107,7 @@
 /* --- Large Screens --- */
 @media screen and (min-width: 668px) and (max-width: 1023px){
     .container-house{
-        margin-top: -100px;
+        margin-top: -80px;
     }
     .transition4{
         left: 40%;
@@ -120,6 +121,7 @@
     }
     .content .text-content p:nth-child(1){
         font-size: 43px;
+        margin-top: 0;
     }
     .content .text-content p:nth-child(2){
         font-size: 63px;
@@ -145,7 +147,9 @@
         display: none;
     }
     .transition4{
-        display: none;
+        width: 80px;
+        rotate: 90deg;
+        margin-top: -20px;
     }
     .container-house .img-house{
         background: url(../../assets/FOTO\ 1-mobile.webp);

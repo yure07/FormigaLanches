@@ -3,6 +3,7 @@ section{font-family: 'MADE Outer Sans';}
     background-color: black;
     width: 100vw;
     font-family: 'MADE Outer Sans';
+    overflow: hidden;
 }
 
 .container-whisky .info-whisky{
@@ -118,7 +119,7 @@ section{font-family: 'MADE Outer Sans';}
     .container-whisky{
         display: flex;
         flex-direction: column-reverse;
-        height: 33vh;
+        height: 50vh;
     }
     .whiskys{
         height: 35vh;
@@ -137,7 +138,7 @@ section{font-family: 'MADE Outer Sans';}
     }
     .whiskys .jack{
         width: 40vw;
-        margin-right: -10px;
+        margin-right: -20px;
         height: 25vh;
     }
     .whiskys .chivas{
@@ -159,9 +160,7 @@ section{font-family: 'MADE Outer Sans';}
 
 /* --- Mobile Screens --- */
 @media screen and (width <= 380px){
-    .container-whisky{
-        height: 35vh;
-    }
+    
     .info-whisky p:nth-child(3){
         font-size: 14px;
     }

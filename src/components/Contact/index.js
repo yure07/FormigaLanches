@@ -23,7 +23,7 @@ export default function Contact () {
         if (divMain.style.backgroundColor === 'var(--color-beige2)'){
             svg.style.display = 'flex'
             divMain.style.backgroundColor = 'var(--color-orange)'
-            icon.style.marginLeft ='-260px'
+            icon.style.marginLeft ='-80px'
         } else {
             divMain.style.backgroundColor = 'var(--color-beige2)'
             icon.style.marginLeft = '-85px';
@@ -32,7 +32,7 @@ export default function Contact () {
         if (divMain.style.backgroundColor === 'var(--color-beige2)'){
             svg.style.display = 'flex'
             divMain.style.backgroundColor = 'var(--color-orange)'
-            icon.style.marginLeft ='-210px'
+            icon.style.marginLeft ='-60px'
         } else {
             divMain.style.backgroundColor = 'var(--color-beige2)'
             icon.style.marginLeft = '-70px';
@@ -41,7 +41,7 @@ export default function Contact () {
         if (divMain.style.backgroundColor === 'var(--color-beige2)'){
             svg.style.display = 'flex'
             divMain.style.backgroundColor = 'var(--color-orange)'
-            icon.style.marginLeft ='-140px'
+            icon.style.marginLeft ='-40px'
         } else {
             divMain.style.backgroundColor = 'var(--color-beige2)'
             icon.style.marginLeft = '-40px';

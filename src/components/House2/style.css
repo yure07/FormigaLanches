@@ -92,13 +92,13 @@ body{
     .text-content2 p{
         width: 50vw;
         font-size: 18px;
-        padding: 0 2%;
+        
         margin-top: 8%;
         z-index: 99;
     }
     .img-house2{
         background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
-        width: 50vw;
+        width: 45vw;
         height: 55vh;
         background-position: center;
         background-size: cover;
@@ -129,7 +129,6 @@ body{
     .container-house2 p{
         width: 50vw;
         font-size: 20px;
-        padding: 0 2%;
         margin-top: 8%;
         z-index: 99;
     }
@@ -159,24 +158,28 @@ body{
     }
     .transition5{
         background: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
-        margin-top: 250px;
+        margin-top: -45px;
         width: 100vw;
         left: 0;
-        height: 50px;
+        height: 70px;
     }
     .content2{
         display: flex;
         flex-direction: column;
     }
-    .content2 p{
+    .container-house2 .content2 {
         display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 90vw;
+        width: 100vw;
+        margin-left: 0;
         margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .content2 p{
+        width: 85%;
+        margin-left: 20px;
         font-size: 16px;
-        
+        text-align: center;
     }
     .img-house2{
         background: url(../../assets/frmigalarge-community-tablebar-scale-4_00x.webp);
@@ -199,6 +202,6 @@ body{
 /* --- Mobile Screens --- */
 @media screen and (width <= 380px){
     .content2 p{
-        font-size: 15px;
+        font-size: 14px;
     }
 }

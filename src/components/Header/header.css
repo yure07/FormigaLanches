@@ -5,6 +5,7 @@
     width: 100vw;
     font-family: 'MADE Outer Sans';
     font-weight: 300;
+    z-index: 99;
 }
 
 .container-header > ul{
@@ -43,7 +44,7 @@
     display: none;
 }
 
-.container-header .menu-mobile h1:first-child{
+.container-header .menu-mobile h1{
     color: var(--color-beige2);
 }
 
@@ -72,8 +73,7 @@
 
     .img-logo{
         width: 90px;
-        height: 100px;
-        margin-top: -20px;
+        height: 90px;
     }
 
     .container-header .menu-mobile{
@@ -93,11 +93,18 @@
     .container-header .menu-mobile{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         font-size: 12px;
+        position: absolute;
+
     }
 
     .container-header .menu-mobile h1:last-child{
         margin-top: -20px;
+    }
+
+    .transition-header1{
+        width: 100vw;
+        height: 120px;
+        background: linear-gradient(to bottom, #000 70%, rgba(0, 0, 0, 0));
     }
 }

@@ -193,10 +193,10 @@
     }
     .transition-mobile{
         display: flex;
+        z-index: 0;
         position: absolute;
         width: 100vw;
-        height: 1270px;
-        z-index: 98;
+        height: 45px;
         background: linear-gradient(to top, #000 50%, rgba(0, 0, 0, 0) 90%);
     }
     

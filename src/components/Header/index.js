@@ -14,6 +14,7 @@ export default function Header (){
                     <li>Contato</li>
                 </ul>
         
+                <div className='transition-header1'></div>
                 <div className='menu-mobile'>
                 <h1>formiga</h1>
                 <h1>lanches</h1>

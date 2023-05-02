@@ -2,15 +2,6 @@ import { useEffect, useRef } from 'react'
 import './menu.css'
 
 export default function Menu () {
-    /*const divRef = useRef()
-    useEffect(()=>{
-        window.addEventListener('resize', function(){
-            if(this.window.innerWidth < 600){
-                divRef.current.classList = null
-                console.log(divRef)
-            }
-        })
-    },[])*/
     return(
         <section className="menu">
             <div className='transition2'></div>
